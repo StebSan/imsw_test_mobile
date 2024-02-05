@@ -1,0 +1,43 @@
+<div>
+  <form [formGroup]="formUser" (ngSubmit)="saveUser()">
+    <div>
+      <ion-input
+        label="Nombre"
+        labelPlacement="floating"
+        [counter]="true"
+        maxlength="50"
+        formControlName="name"
+      ></ion-input>
+    </div>
+    <div>
+      <ion-input
+        label="Email"
+        labelPlacement="floating"
+        [counter]="true"
+        maxlength="20"
+        email
+        formControlName="email"
+      ></ion-input>
+    </div>
+    <div>
+      <ion-input
+        label="Edad"
+        labelPlacement="floating"
+        [counter]="true"
+        maxlength="2"
+        type="number"
+        formControlName="yearsOld"
+      ></ion-input>
+    </div>
+    <div class="mt-40">
+      <ion-button expand="block"
+                  mode="ios"
+                  type="submit"
+                  class="btn-block fw-7"
+                  [color]="formUser.invalid ? 'medium' : 'primary'"
+                  [disabled]="formUser.invalid">
+          ACEPTAR
+        </ion-button>
+    </div>
+  </form>
+</div>

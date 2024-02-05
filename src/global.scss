@@ -24,3 +24,151 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+html.ios, html.android {
+  --ion-default-font: "Montserrat", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Roboto", sans-serif;
+}
+:root {
+  .text-welcome {
+    font-weight: 700;
+    color: var(--ion-color-primary);
+    font-size: 22px;
+    padding: 10%;
+  }
+
+  .title-toolbar {
+    color: var( --ion-color-secondary);
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-right: 25px;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .step-toolbar {
+    margin-top: 13px;
+    margin-bottom: 8px;
+    text-align: center;
+    ion-radio-group {
+      margin-right: 50px;
+    }
+  }
+  .text-note {
+    color: var(--ion-color-primary-black);
+  }
+  .separator-note {
+    background: var(--ion-color-tertiary);
+  }
+
+  .title-alert {
+    font-weight: 600;
+    color: var( --ion-color-secondary);
+    margin-bottom: 20px;
+  }
+  .msg-alert {
+    font-size: 16px;
+    color: #212121;
+  }
+
+  .title {
+    color: var( --ion-color-secondary);
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  button[aria-label="alert-close"] {
+    color: var(--ion-color-primary-contrast);
+    background-color: var(--ion-color-primary);
+    border-radius: 40px;
+    margin: 10px 15px 20px 15px;
+    width: 100%;
+
+    span {
+      justify-content: center;
+    }
+  }
+
+  ion-toast.error {
+    --background: #961e00;
+    --box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
+    --color: #ffffff;
+    --font-size: 16px
+  }
+}
+
+.align-items-center {
+  align-items: center;
+}
+.btn-block {
+  --border-radius: 40px;
+}
+.mt-0 {
+  margin-top: 0px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.ml-5 {
+  margin-left: 5px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.ml-15 {
+  margin-left: 15px;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.m-10 {
+  margin: 10px;
+}
+.m-20 {
+  margin: 20px;
+}
+.m-40 {
+  margin: 40px;
+}
+.p-20 {
+  padding: 20px;
+}
+.pt-0 {
+  padding-top: 0px;
+}
+.pb-0 {
+  padding-bottom: 0px;
+}
+.fw-7 {
+  font-weight: 700;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.text-underline{
+  text-decoration: underline;
+}
