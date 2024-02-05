@@ -1,0 +1,7 @@
+{
+  "name": "imsw_test_mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
